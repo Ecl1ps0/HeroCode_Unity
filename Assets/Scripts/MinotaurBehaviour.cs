@@ -6,11 +6,11 @@ public class MinotaurBehaviour : MonoBehaviour
 {
     [SerializeField] HealthBar _minotaurHealthBar;
 
-    //private Animator _animator;
+    private Animator _animator;
 
     void Start()
     {
-        //_animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class MinotaurBehaviour : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            //_animator.SetTrigger("Minotaur_Left_Hit");
+            _animator.SetTrigger("Minotaur_Left_Hit");
         }
     }
 
